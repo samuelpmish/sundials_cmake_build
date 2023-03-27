@@ -1,0 +1,7 @@
+{
+    "cmake.configureArgs": [
+        //"-DCMAKE_CXX_FLAGS=-ftime-trace",
+        //"-DENABLE_ASAN=True",
+    ],
+    "cmake.configureOnOpen": true,
+}
