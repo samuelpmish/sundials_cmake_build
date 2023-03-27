@@ -13,6 +13,18 @@ $ cd sundials_cmake_build
 sundials_cmake_build$ cmake . -Bbuild
 ```
 
+Note: You'll need a compiler that supports c++14 or newer (this project actually asks for c++17, but
+sundials only requires c++14 or newer). 
+
+If the default compiler found by CMake doesn't support modern c++, 
+you can specify compilers manually by doing something like
+
+```
+sundials_cmake_build$ cmake . -Bbuild \
+                              -DCMAKE_C_COMPILER=/path/to/c/compiler \
+                              -DCMAKE_CXX_COMPILER=/path/to/cxx/compiler
+```
+
 3. Build
 
 ```
